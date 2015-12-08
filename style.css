@@ -122,7 +122,7 @@ position: relative;
 left: -228px;
 }
 
-.product1{
+#product1{
 border: 2px solid black;
 border-radius: 10px;
 
@@ -141,13 +141,13 @@ display:inline-block;
 }
 
 
-.product1 p{
+#product1 p{
 position:relative;
 top: 110px;
 font-weight:bold;
 }
 
-.product1 a{
+#product1 a{
 position:relative;
 top: 126px;
 text-decoration:none;
@@ -161,7 +161,7 @@ padding-top: 4px;
 padding-bottom: 4px;
 }
 
-.product2{
+#product2{
 border: 2px solid black;
 border-radius: 10px;
 
@@ -179,13 +179,13 @@ margin-left: 56px;
 
 }
 
-.product2 p{
+#product2 p{
 position:relative;
 top: 110px;
 font-weight:bold;
 }
 
-.product2 a{
+#product2 a{
 position:relative;
 top: 126px;
 text-decoration:none;
@@ -200,7 +200,7 @@ padding-bottom: 4px;
 }
 
 
-.product3{
+#product3{
 border: 2px solid black;
 border-radius: 10px;
 
@@ -218,13 +218,13 @@ margin-left: 56px;
 
 }
 
-.product3 p{
+#product3 p{
 position:relative;
 top: 110px;
 font-weight:bold;
 }
 
-.product3 a{
+#product3 a{
 position:relative;
 top: 127px;
 text-decoration:none;
@@ -239,7 +239,7 @@ padding-bottom: 4px;
 }
 
 
-.product4{
+#product4{
 border: 2px solid black;
 border-radius: 10px;
 
@@ -256,13 +256,13 @@ display:inline-block;
 
 }
 
-.product4 p{
+#product4 p{
 position:relative;
 top: 110px;
 font-weight:bold;
 }
 
-.product4 a{
+#product4 a{
 position:relative;
 top: 126px;
 text-decoration:none;
@@ -277,7 +277,7 @@ padding-bottom: 4px;
 }
 
 
-.product5{
+#product5{
 border: 2px solid black;
 border-radius: 10px;
 
@@ -296,13 +296,13 @@ margin-left: 56px;
 
 }
 
-.product5 p{
+#product5 p{
 position:relative;
 top: 110px;
 font-weight:bold;
 }
 
-.product5 a{
+#product5 a{
 position:relative;
 top: 126px;
 text-decoration:none;
@@ -317,7 +317,7 @@ padding-bottom: 4px;
 }
 
 
-.product6{
+#product6{
 border: 2px solid black;
 border-radius: 10px;
 
@@ -335,13 +335,13 @@ margin-left: 56px;
 
 }
 
-.product6 p{
+#product6 p{
 position:relative;
 top: 110px;
 font-weight:bold;
 }
 
-.product6 a{
+#product6 a{
 position:relative;
 top: 126px;
 text-decoration:none;
@@ -355,28 +355,28 @@ padding-top: 4px;
 padding-bottom: 4px;
 }
 
-.product1 a:hover{
+#product1 a:hover{
 color:gold;
 text-decoration:underline;
 }
 
-.product2 a:hover{
+#product2 a:hover{
 color:gold;
 text-decoration:underline;
 }
-.product3 a:hover{
+#product3 a:hover{
 color:gold;
 text-decoration:underline;
 }
-.product4 a:hover{
+#product4 a:hover{
 color:gold;
 text-decoration:underline;
 }
-.product5 a:hover{
+#product5 a:hover{
 color:gold;
 text-decoration:underline;
 }
-.product6 a:hover{
+#product6 a:hover{
 color:gold;
 text-decoration:underline;
 }
@@ -458,6 +458,30 @@ text-decoration:underline;
 }
 
 
+#table{
+position:relative;
+top:40px;
+left:320px;
+display:inline-block;
+border: 1px solid black;
 
+}
+
+#table th{
+font-size:18px;
+}
+
+#support{
+text-align:center;
+position:relative;
+top:60px;
+
+}
+
+
+
+#col{
+color:red;
+}
 
 
