@@ -460,7 +460,7 @@ text-decoration:underline;
 
 #table{
 position:relative;
-top:40px;
+top:37px;
 left:320px;
 display:inline-block;
 border: 1px solid black;
@@ -474,8 +474,92 @@ font-size:18px;
 #support{
 text-align:center;
 position:relative;
-top:60px;
+top:65px;
 
+}
+
+#fbad{
+height: 210px;
+width:180px;
+border:2px solid grey;
+background-image: url('images/facebook.png');
+background-repeat: no-repeat;
+background-position: 50% 10%;
+display:inline-block;
+margin-left: 150px;
+margin-top:100px;
+text-align: center;
+border: 2px solid grey;
+border-radius: 10px;
+}
+
+#fbad p{
+position: relative;
+top:80px;
+font-weight:bold;
+font-size: 17px;
+}
+
+
+#fbad a{
+position: relative;
+top:90px;
+}
+
+#twitterad{
+height: 210px;
+width:180px;
+border:2px solid grey;
+background-image: url('images/twitter.png');
+background-repeat: no-repeat;
+background-position: 50% 10%;
+display:inline-block;
+margin-left: 20px;
+text-align: center;
+border: 2px solid grey;
+border-radius: 10px;
+}
+
+
+#twitterad p{
+position: relative;
+top:80px;
+font-weight:bold;
+font-size: 17px;
+}
+
+
+#twitterad a{
+position: relative;
+top:90px;
+}
+
+#instaad{
+height: 210px;
+width:180px;
+border:2px solid grey;
+background-image: url('images/instagram.jpg');
+background-repeat: no-repeat;
+background-position: 50% 10%;
+display:inline-block;
+margin-left: 20px;
+text-align: center;
+border: 2px solid grey;
+border-radius: 10px;
+}
+
+
+#instaad p{
+position: relative;
+top:80px;
+font-weight:bold;
+font-size: 17px;
+}
+
+
+#instaad a{
+position: relative;
+top:90px;
 }
 
 
