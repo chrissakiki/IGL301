@@ -5,7 +5,29 @@
 <link rel="shortcut icon" href="webicon.ico">
 </head>
 
-<body>
+<body onload="ColorChange()">
+
+<script>
+
+function ColorChange() {
+  var changecolor = window.setInterval(Colorrand, 2200);
+}
+function Colorrand() {
+    var color;
+    var num = Math.random();
+    if (num < 0.30) {
+        color = "blue";
+    } else if (num < 0.70) {
+        color = "red";
+    } else {
+        color = "black";
+        window.clearInterval(changecolor);
+    }
+    document.getElementById("brcolor").style.color = color;
+}
+
+
+</script>
 
 <div id="world">
 <div id="christmas">
@@ -18,13 +40,13 @@
 </nav>
 
 <div id="information">
-<p> This Software will make you realize that you can do much more things than what youtube allows you to do. </p>
+<p id="brcolor"> This Software will make you realize that you can do much more things than what youtube allows you to do. </p>
 <p> It contains so many powerful tools such as: </p>
 <ol>
-<li> Bot Viewer </li>
-<li> Video To Mp3 Converter </li>
-<li> Video Downloader </li>
-<li> Video Watcher </li>
+<li onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'"> Bot Viewer </li>
+<li onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'"> Video To Mp3 Converter </li>
+<li onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'"> Video Downloader </li>
+<li onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'"> Video Watcher </li>
 </ol>
 
 <iframe title="YouTube video player" class="youtube-player" type="text/html" 

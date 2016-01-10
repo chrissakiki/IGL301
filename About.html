@@ -1,11 +1,35 @@
 <html>
 <head>
 <title> Youtube Multi Tool </title>
+<script src="jquery-2.1.3.js"></script>
 <link href="style.css" rel="stylesheet">
 <link rel="shortcut icon" href="webicon.ico">
 </head>
 
 <body>
+<script>
+function subscribtion(){
+
+
+window.alert("Thank you for subscribing " + document.getElementById("submail").value);
+}
+
+
+$(function(){
+$('#subscribe').css({
+"text-align":"center",
+"position":"relative",
+"top":"40px"
+              }) ;
+           });
+
+$(function(){
+$('#subscribe>h3').css({
+"color":"red"
+              }) ;
+           });
+
+</script>
 
 <div id="world">
 <div id="christmas">
@@ -22,54 +46,62 @@
 <thead>
 <tr>
 <th>Location:</th>
-<td>Beirut-Lebanon</td>
+<td onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">Beirut-Lebanon</td>
 </tr>
 </thead>
 <tfoot>
 <tr>
 <th>Owner:</th>
-<td>AKIKI Chris</td>
+<td onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">AKIKI Chris</td>
 </tr>
 <tr>
 <th>Phone:</th>
-<td>+0096170083899</td>
+<td onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">+0096170083899</td>
 </tr>
 <tr>
 <th>Fax:</th>
-<td>+0096170083888</td>
+<td onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">+0096170083888</td>
 </tr>
 <tr>
 <th>Support:</th>
-<td>Support@website.com</td>
+<td onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">Support@website.com</td>
 </tr>
 
 <tr>
 <th>Contact us:</th>
-<td>Contact@website.com</td>
+<td onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">Contact@website.com</td>
 </tr>
 
 </tfoot>
 
 </table>
 </div>
-<div id="support">
-*Free support is being provided by e-mail within 48 hours. We do <span id="col">NOT</span> provide telephone support.
+
+
+<div id="subscribe">
+<h3> Subscribe so you can receive updates from us. </h3>
+<p>Enter your Email:
+                <input type="text" id="submail" placeholder="example@example.com" onfocus="this.style.background='yellow'" onblur="this.style.background=''"/>
+                 <input type="Submit"  onclick="subscribtion()"/>  
+            </p>
 </div>
 
+
 <div id="fbad">
-<p> Facebook</p>
+<p > Facebook</p>
 <a href="#"> Like US! </a>
 </div>
 
 <div id="twitterad">
-<p> Twitter</p>
-<a href="#"> Follow US! </a>
+<p > Twitter </p>
+<a href="#" > Follow US! </a>
 </div>
 
 <div id="instaad">
-<p> Instagram</p>
+<p > Instagram</p>
 <a href="#"> Find US! </a>
 </div>
+
 
 
 </div>

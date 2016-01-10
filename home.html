@@ -1,11 +1,97 @@
 <html>
 <head>
-<title> Youtube Multi Tool </title>
+<script src="jquery-2.1.3.js"></script>
+<title id="title"> Youtube Multi Tool </title>
 <link href="style.css" rel="stylesheet">
 <link rel="shortcut icon" href="webicon.ico">
 </head>
 
-<body>
+<body onload="PictureChange()">
+ <script>
+function loginuser(){
+var username = window.prompt("Enter your username");
+
+
+window.prompt("Enter your password");
+
+ document.getElementById("title").innerHTML = "Welcome " + username + "- Youtube Multi Tool" ;
+}
+function PictureChange() {
+ var picture = window.setInterval(Picturerand, 2200);
+}
+function Picturerand() {
+    var pic;
+    var num = Math.random();
+    if (num < 0.30) {
+        pic = "images/bot.png";
+    } else if (num < 0.70) {
+        pic = "images/yd.png";
+
+    } else {
+        pic = "images/vtm.png";
+   window.clearInterval(picture);
+
+    }
+    document.getElementById("picanimated").src = pic;
+
+
+}
+
+function registeruser(){
+var email = window.prompt("Enter your Email");
+
+window.prompt("Enter your username");
+window.prompt("Enter your password");
+
+window.alert("Verification Code has been sent to " + email );
+}
+
+$(function(){
+$('#login').css({
+"float":"right",
+"display":"inline-block",
+"margin-right":"10px",
+"padding-top":"10px",
+"color":"blue"
+              }) ;
+           });
+
+
+$(function(){
+$('#spacething').css({
+"float":"right",
+"display":"inline-block",
+"margin-right":"10px",
+"padding-top":"10px"
+              }) ;
+           });
+
+
+$(function(){
+$('#register').css({
+"float":"right",
+"display":"inline-block",
+"margin-right":"10px",
+"padding-top":"10px",
+"color":"blue"
+              }) ;
+           });
+
+
+$(function(){
+$('#picanimated').css({
+"height":"220px"
+,
+"width":"220px",
+"padding-top":"80px",
+"padding-left":"290px"
+              }) ;
+           });
+
+
+
+            
+        </script>
 
 <div id="world">
 <div id="christmas">
@@ -22,6 +108,9 @@
 <p> 20% DISCOUNT!! </p>
 <p> FOR A VERY SHORT TIME. </p>
 <p> MAKE SURE TO PURCHASE!! </p>
+<img src="images/bot.png" id="picanimated"/>
+
+
 </div>
 
 <div id="info">
@@ -29,6 +118,12 @@
 </div>
 
 
+<div >
+<p id="register" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="registeruser()"> Register </p>
+<p id="spacething"> | </p>
+<p id="login" onmouseover="this.style.color='black'" onmouseout="this.style.color='blue'" onclick="loginuser()"> Login </p>
+
+</div>
 </div>
 <div id="made">
 <p> &copy Copyright 2015-2016 </p>
